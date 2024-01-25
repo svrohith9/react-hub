@@ -5,9 +5,10 @@ import Nav from "./components/Nav";
 import MainBar from "./components/MainBar";
 
 function App() {
+  const dataList = ["Apple", "Banana", "Orange"];
   return (
     <div className="App">
-      <Nav />
+      <Nav dataList={dataList} />
       <Header name="Rohith" color="red" />
       <MainBar />
       <Sidebar />

@@ -1,17 +1,15 @@
-//create a Nav function
-function Nav() {
+import React from "react";
+function Nav(props) {
   return (
-    <ul>
-      <li>California</li>
-      <li>Texas</li>
-      <li>Florida</li>
-      <li>New York</li>
-      <li>Illinois</li>
-      <li>Ohio</li>
-      <li>Pennsylvania</li>
-      <li>Georgia</li>
-      <li>North Carolina</li>
-    </ul>
+    <>
+      <h1>
+        {props.dataList.map((item, index) => {
+          <li>
+            {index}.{item}.
+          </li>;
+        })}
+      </h1>
+    </>
   );
 }
 export default Nav;
